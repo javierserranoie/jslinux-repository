@@ -1,4 +1,5 @@
 #!/bin/bash
+sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/g' /etc/pacman.conf
 export EDITOR=nvim
 
 cp /etc/locale.gen /etc/locale.gen.back
