@@ -3,13 +3,13 @@ sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/g' /etc/pacman.conf
 export EDITOR=nvim
 
 cp /etc/locale.gen /etc/locale.gen.back
-echo "en_US.UTF-8" > /etc/locale.gen
-echo "es_ES.UTF-8" >> /etc/locale.gen
+echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
+echo "es_ES.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 
-echo "LANG=en_US.UTF-8">>/etc/locale.conf
-echo "KEYMAP=es">>/etc/vconsole.conf
-echo "jshost">>/etc/hostname
+echo "LANG=en_US.UTF-8">/etc/locale.conf
+echo "KEYMAP=es">/etc/vconsole.conf
+echo "jshost">/etc/hostname
 
 timedatectl set-ntp true
 ln -sf /usr/share/zoneinfo/Europe/Madrid /etc/localtime
