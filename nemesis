@@ -5,7 +5,7 @@ export EDITOR=nvim
 cp /etc/locale.gen /etc/locale.gen.back
 echo "en_US.UTF-8" > /etc/locale.gen
 echo "es_ES.UTF-8" >> /etc/locale.gen
-localge-gen
+locale-gen
 
 echo "LANG=en_US.UTF-8">>/etc/locale.conf
 echo "KEYMAP=es">>/etc/vconsole.conf
